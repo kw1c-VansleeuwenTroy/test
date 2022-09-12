@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Config Version="1.1">
+	<Release>
+		<ReleasePath Path="C:\OPCUA\"/>
+	</Release>
+	<DataSet>
+	</DataSet>
+</Config>

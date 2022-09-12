@@ -6,7 +6,8 @@
 	SolutionType       = "Large"
 	WriteSrvListOnSave = "true"
 	ExportSymTab       = "true"
-	CLASSType          = "true">
+	CLASSType          = "true"
+	OPCSettings        = "true">
 	<OnlineConnectionInfo>
 		<TCPIP ConfigName="noname" BUS="3" Password="" IP="10.10.100.2" PORT="1954" SomeFlags="0" PLCID="0" Repeater="0" SSLTLS="0" Favorite="0"/>
 	</OnlineConnectionInfo>

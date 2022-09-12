@@ -28,7 +28,7 @@
 			Name       = "pumpControl2"
 			GUID       = "{5674CC20-1C44-4ACA-9FC7-99AD4EAD46EA}"
 			Class      = "pumpControl"
-			Position   = "(480,750)"
+			Position   = "(480,780)"
 			Visualized = "true"
 			CyclicTime = "10 ms">
 			<Channels>
