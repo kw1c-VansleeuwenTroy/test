@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="LseEasyMain" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "HmiComPortCan1"
+			GUID       = "{44A72ECA-CC2D-4677-B360-C592B36FE4DD}"
+			Class      = "HmiComPortCan"
+			Position   = "(210,150)"
+			Visualized = "false">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="ErrorCnt"/>
+				<Server Name="RetryCnt"/>
+				<Server Name="RxData"/>
+				<Server Name="TxData"/>
+				<Client Name="CanInterface" Value="1"/>
+				<Client Name="CanNodeDisplay" Value="1"/>
+				<Client Name="CanRxMsgID" Value="16#40"/>
+				<Client Name="CanTxMsgID" Value="16#20"/>
+				<Client Name="CoCanLib"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{3DC12998-BA47-48EA-8928-AFD2DEA97316}" Class="HmiComPort">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="ErrorCnt"/>
+								<Server Name="RetryCnt"/>
+								<Server Name="RxData"/>
+								<Server Name="TxData"/>
+								<Client Name="CoSys"/>
+								<Client Name="StdLib"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="File" GUID="{AF8E049A-1A36-4D27-B348-4C302BD7400E}" Class="HmiFile">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="OpSysFile"/>
+												<Client Name="StdLib"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="CanSend" GUID="{31FF8A10-640D-4E83-B210-D5FAEB6DBC03}" Class="HmiCanSendReceive">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="ErrorCnt"/>
+								<Server Name="RxPack"/>
+								<Server Name="TxPack"/>
+								<Server Name="TxRetry"/>
+								<Client Name="CanInterface" Value="1"/>
+								<Client Name="CanNodeDisplay" Value="1"/>
+								<Client Name="CanRxMsgID" Value="16#40"/>
+								<Client Name="CanTxMsgID" Value="16#20"/>
+								<Client Name="CoCan"/>
+								<Client Name="CoCanLib"/>
+								<Client Name="CoSys"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name           = "LseEasy"
+			GUID           = "{3283AFE3-E4E0-445C-A535-B47798ED7C37}"
+			Class          = "LseEasy"
+			Position       = "(960,150)"
+			Visualized     = "true"
+			BackgroundTime = "always">
+			<Channels>
+				<Server Name="AccessLevel"/>
+				<Server Name="ActHumidity"/>
+				<Server Name="ActLanguage" Value="0"/>
+				<Server Name="ActScreen"/>
+				<Server Name="ActTemperature"/>
+				<Server Name="BacklightDim"/>
+				<Server Name="BacklightOnOff"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ErrorSvr"/>
+				<Server Name="HmiHwVersion"/>
+				<Server Name="HmiOnline"/>
+				<Server Name="HmiSwVersion"/>
+				<Server Name="LastUsage"/>
+				<Server Name="ListVal0"/>
+				<Server Name="ListVal1"/>
+				<Server Name="LseProjectRevision"/>
+				<Server Name="PixMap"/>
+				<Server Name="StateSvr"/>
+				<Server Name="TrendVal0"/>
+				<Server Name="TrendVal1"/>
+				<Client Name="AutoFirmwareUpdate" Value="0"/>
+				<Client Name="BackLightOff" Value="300000"/>
+				<Client Name="ComPort"/>
+				<Client Name="OverloadLight" Value="-1"/>
+				<Client Name="ProjectPath" Value="0"/>
+				<Client Name="TempInterval" Value="1000"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="File" GUID="{CCB3B670-FB7E-41DA-8934-EA5F5061F075}" Class="HmiFile">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="OpSysFile"/>
+								<Client Name="StdLib"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiChkBitList" GUID="{E80D16A2-9782-4D6C-BD13-7901FFE76A78}" Class="HmiChkBitList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+								<Client Name="StringLib"/>
+								<Client Name="VarList"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{361C9BA1-D933-4984-AFD7-C74FCAA78746}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="Label" GUID="{A1AA71E0-A550-42A4-85B6-77DB89E871D8}" Class="HmiAsciiBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiColorMap" GUID="{00C39C16-F5C1-48DE-BB2D-BDF182971860}" Class="HmiColorMap">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{0FD3910C-FC96-4189-A298-668B6B552F42}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiFont35" GUID="{D5D552B0-CBDE-4C07-B266-87C4C51B8F1C}" Class="HmiFont35">
+							<Channels>
+								<Server Name="ByteSize"/>
+								<Server Name="ClassSvr"/>
+								<Client Name="StdLib"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiFontList" GUID="{7E347A47-968D-4B28-A339-CA8B56538122}" Class="HmiFontList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+								<Client Name="StringLib"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="Label" GUID="{19940C1E-BDE0-468A-8F8C-83D3890F5F2E}" Class="HmiAsciiBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiFontShemeList" GUID="{476BB558-3520-47BA-8792-1A7C1783EB0D}" Class="HmiShemeList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{9E8CB4E9-E207-4794-91FF-2E31E4FE0F92}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiFunctionList" GUID="{D111BA5F-86A2-4514-B7D2-AEF7985A0AE9}" Class="HmiFunctionList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{849F1E29-023A-4D32-849A-45444A386488}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiFunctionList35" GUID="{077FC13D-EFA6-4DBA-9E45-940D6C17D00C}" Class="HmiFunctionList35">
+							<Channels>
+								<Server Name="ByteSize"/>
+								<Server Name="ClassSvr"/>
+								<Client Name="HmiVarList"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiImage35" GUID="{435CBA3A-69C7-421C-9A95-6F15A9DA5CB5}" Class="HmiImage35">
+							<Channels>
+								<Server Name="ByteSize"/>
+								<Server Name="ClassSvr"/>
+								<Client Name="StdLib"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiImageList" GUID="{53921F94-6298-4DFB-8797-94D07E95592F}" Class="HmiImageList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+								<Client Name="StringLib"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{FC0DF77A-E3CB-4D80-9001-02216265B826}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="Label" GUID="{2999DDCD-5D3C-4AEB-925C-21AEE50C2EB0}" Class="HmiAsciiBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiImageShemeList" GUID="{B92F32B2-C989-4657-A0E2-3A4A5E178CBF}" Class="HmiShemeList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{9E8CB4E9-E207-4794-91FF-2E31E4FE0F92}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiMapFile" GUID="{226B143E-BBE5-45BE-A330-AAF2698342AA}" Class="HmiMapFile">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+								<Client Name="StateBit"/>
+								<Client Name="StringLib"/>
+								<Client Name="VarList"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiProject35" GUID="{605B623B-AE7B-42EC-86A6-18A40707CE77}" Class="HmiProject35">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="TotalByteSize"/>
+								<Server Name="TotalFileNo"/>
+								<Client Name="StdLib"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiProjectList" GUID="{523B5DEE-1F32-4BCD-AFBA-F502CD027A0C}" Class="HmiProjectList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+								<Client Name="StringLib"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiScreen" GUID="{75C46C92-F39D-4229-81DF-1FDCBD728A73}" Class="HmiScreen">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{DE61605B-B1DB-4667-AC7A-272EEA2BB570}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="MemCircle" GUID="{F235288C-DEFA-4F9C-8F68-1EBC7CC934E1}" Class="HmiMemCircle">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="MemImage" GUID="{94730C1D-43EA-4011-BCCE-584BA62E2C33}" Class="HmiMemImage">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="MemIO" GUID="{9D7EF36C-95A3-447D-B50A-F1468F730B38}" Class="HmiMemIO">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="MemLine" GUID="{FB1FAF15-4D3C-4A45-B393-9146274A1600}" Class="HmiMemLine">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="MemRectangle" GUID="{CB0096B3-47B9-461F-8BD5-58E239F880AD}" Class="HmiMemRectangle">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+										<Object Name="MemText" GUID="{3F02E1F7-371F-4D52-9265-291207CEEEE5}" Class="HmiMemText">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="MemZorder" GUID="{AB4217B3-8082-40C9-8475-63286F02E258}" Class="HmiMemZorder">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiSetUpList" GUID="{4929C689-66C0-4FDA-8DF0-C0B161572721}" Class="HmiSetUpList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{61551BB3-118B-402B-B5AB-EC42B5B1ACDE}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiSetupList35" GUID="{9E70FCCC-7DBB-4AD1-A2BA-1F270A0F9C9B}" Class="HmiSetupList35">
+							<Channels>
+								<Server Name="ByteSize"/>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiShemeList35" GUID="{67329C51-C204-4C46-9E38-47EBC27287F5}" Class="HmiShemeList35">
+							<Channels>
+								<Server Name="ByteSize"/>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiStateBit35" GUID="{2C155A17-86F2-4CCA-8EC7-3B962F37CF10}" Class="HmiStateBit35">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="ChkBit"/>
+								<Client Name="ComPort"/>
+								<Client Name="StringLib"/>
+								<Client Name="VarList"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiT9Config" GUID="{8AED453D-4650-456F-A661-8CED12DAFFA8}" Class="HmiT9Config35">
+							<Channels>
+								<Server Name="ByteSize"/>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiTextList" GUID="{5484FB91-4C51-41CF-8F3A-158999B1F5B2}" Class="HmiTextList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+								<Client Name="HmiTextList35"/>
+								<Client Name="HmiVarList"/>
+								<Client Name="StringLib"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="TextList00" GUID="{3C7F0ED6-F328-4CB7-9AA4-EAE8AD43AEED}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="TextList01" GUID="{7285A23E-7C0B-4658-A6E3-59E96FEB2801}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="TextList02" GUID="{A7B949A3-B7D3-413C-90A5-B5D82AC29EDE}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="TextList03" GUID="{0F2AA42E-BE72-4B49-BCEC-6C87F3BEDF6E}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="TextList04" GUID="{9EE5A475-B1DE-4E5F-974C-434C67DB6D42}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="TextList05" GUID="{75284B9D-80F7-4992-9FF2-381D3DC6895C}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="TextList06" GUID="{1F6F7A17-BDC5-41DC-A652-EEC39A168D58}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="TextList07" GUID="{C13BD66D-3B55-419C-80A3-3F1DC1901075}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="TextList08" GUID="{CCCBB072-4BCF-42C0-8861-F406934F4856}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="TextList09" GUID="{8B577D62-276D-4913-8276-E19762CA4B99}" Class="HmiUniBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiTextList35" GUID="{57CD4C7B-9157-485E-B032-AB0799DBC106}" Class="HmiTextList35">
+							<Channels>
+								<Server Name="ByteSize"/>
+								<Server Name="ClassSvr"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="TxtLstMgr" GUID="{F2E775E1-0F0D-44F4-BDED-054C89E42B0D}" Class="HmiTextList35Manager">
+											<Channels>
+												<Server Name="ClassSvr"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiTextShemeList" GUID="{CD85887A-BE32-4594-BC07-5CEB4DF5FBE9}" Class="HmiShemeList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="File"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{9E8CB4E9-E207-4794-91FF-2E31E4FE0F92}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiUtils" GUID="{E0A77BB4-C44F-4A93-8113-30DFF4E63E38}" Class="HmiUtils">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="HmiVarList" GUID="{6A0C3576-CB1F-416A-BCA8-889B05C0F116}" Class="HmiVarList">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="ComPort"/>
+								<Client Name="File"/>
+								<Client Name="HmiVarList35"/>
+								<Client Name="StringLib"/>
+								<Client Name="TextList"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{58D1A081-E883-47F1-81E9-6B29F8BA2FA1}" Class="HmiBaseList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="HmiUnitShemeList" GUID="{DDFD2CD4-ACB1-4E7C-8C48-53A068F80E7C}" Class="HmiShemeList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{9E8CB4E9-E207-4794-91FF-2E31E4FE0F92}" Class="HmiBaseList">
+															<Channels>
+																<Server Name="ClassSvr"/>
+																<Client Name="File"/>
+															</Channels>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+										<Object Name="Label" GUID="{0806C304-7D57-43C7-9377-DE0FED88D684}" Class="HmiAsciiBuffer">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+												<Client Name="StringLib"/>
+											</Channels>
+										</Object>
+										<Object Name="UnitInfo" GUID="{C9BB1E6B-E36A-4AA4-A5AB-D5D76B1BC515}" Class="HmiUnitList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+										<Object Name="VarInfo" GUID="{E3E5982E-B392-4881-A1B8-1C9B73FAE293}" Class="HmiVarInfoList">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="File"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="HmiVarList35" GUID="{D04BD39E-FC05-4DFB-9836-C633FC5A82F9}" Class="HmiVarList35">
+							<Channels>
+								<Server Name="ByteSize"/>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="StringLib" GUID="{E030510C-EA6D-43D9-8D9A-61A160910D29}" Class="HmiStrLib">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Client Name="StdLib"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="LseEasy.ComPort" Destination="HmiComPortCan1.ClassSvr" Vertices="(960,240),(716,240),"/>
+	</Connections>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1" ?>
+<HWClassInfo>
+	<HWDevice
+		Revision    = "0.0"
+		ModuleID    = "0"
+		SubModuleID = "0"
+		ModType     = "M_SDCI"
+		Desc        = "SDCI Module">
+		<Types>
+			<Device Name="SDCIDevice" ClassName="SDCIDevice" DisplayGroup="SDCI" Visible="false" >
+			</Device>
+		</Types>
+	</HWDevice>
+	<Class Name="SDCIDevice">
+		<Uplink Name="SdciIn" BusType="SDCI" Channel="SdciIn"/>
+		<Property Name="Required" Channel="Required" Editor="Combo:1=Module is required;0=Module is not required" Desc="0=module is not required 1=module is required (CPU will crash if module is missing)" />
+		<Property Name="Size of PDO read data in bits" Channel="ReadPdoSize" Desc="Size of PDO read data in bits (will be rounded up to the next byte for the data transfer)" Editor="Range:0..256" />
+		<Property Name="Size of PDO write data in bits" Channel="WritePdoSize" Desc="Size of PDO write data in bits (will be rounded up to the next byte for the data transfer)" Editor="Range:0..256" />
+		<Property Name="Port Mode after StartUp" Channel="StartUpMode" Desc="Choose which mode should be enabled after downloading the parameters to the module" Editor="Combo:0=_Inactive;1=_DigitalInput;2=_DigitalOutput;3=_SDCI" />
+		<Property Name="Skip endian swap at PDOs" Channel="SkipEndianSwap" Desc="If set to 1, the PDO data are not converted when reading/writing them (normally SDCI works with big endian and the CPUs with little)" Editor="Combo:0=SwapPdoData;1=DontSwapPdoData" />
+		<Property Name="Skip endian swap at SDOs" Channel="SkipEndianSwapAsy" Desc="If set to 1, the SDO data are not converted when reading/writing them (normally SDCI works with big endian and the CPUs with little)" Editor="Combo:0=SwapSdoData;1=DontSwapSdoData" />
+		<Property Name="Auto Connect Time" Channel="AutoConnectTime" Desc="With this setting the time interval in [sec] in which the port is scanned for an SDCI device can be defined.&#13;&#10;The minimum interval time is specified. The actual interval time can be higher if this setting is selected for several devices and these devices are not present.&#13;&#10;The scanning process for a non-existent device takes about 3.2 seconds. The maximum value is 604800 seconds = 7 days.&#13;&#10;0 ... deactivated (default)&#13;&#10;1-604800 ... Interval time for Device Scan in [sec]" Editor="Range:0..604800;Dec" />
+		<Property Name="Mode Change Time" Channel="ModeChangeTime" Desc="With this setting the wait time in [msec] for mode change of SDCI device can be defined.&#13;&#10;500  ... default value&#13;&#10;0-1000  ... value range" Editor="Range:0..1000;Dec"/>
+
+    <IOState Name="Class State" Channel="ClassState" Desc="Shows the status of the hardware class" Type="" />
+    <IOState Name="Vendor ID" Channel="VendorID" Desc="This information has been read from the module:&#13;&#10;Unique vendor identification" />
+    <IOState Name="Device ID" Channel="DeviceID" Desc="This information has been read from the module:&#13;&#10;Unique device identification allocated by a vendor" />
+    <IOState Name="Minimum Cycle Time in µs" Channel="MinCycleTime" Desc="This information has been read from the module:&#13;&#10;minimum possible cycle time of this module in µs" />
+    <IOState Name="Actual Mode" Channel="ActualMode" Desc="Shows the currently active mode of the device (is only valid when the ClassState is _ClassOk and the FaultFlags are on _NoFault)" />
+    <IOState Name="Port State Bits" Channel="PortStateBits" Desc="These bits show the current state of this port" />
+    <IOState Name="Number Of Available Device Events" Channel="NbrOfEventsAvailable" Desc="Number of device events available&#13;&#10;&#13;&#10;The events can be fetched one by one (beginning with the oldest) via method GetEvent()" />
+    <IOState Name="Fault Flags" Channel="FaultFlags" Desc="Shows the current fault flags of this port" />
+    <Input Name="Digital input at Pin 2" Channel="DirectInput" Type="Digital" Desc="Input (pin 2 of the SDCI port) that does not pass the firmware and is directly fetched from the module&apos;s FPGA" />
+    <Input Name="C/Q as digital Input" Channel="Input" Type="Digital" Desc="If the port is in _DigitalInput mode this server shows the value of the digital input at the C/Q pin (pin 4) of the SDCI port" />
+    <Output Name="C/Q as digital Output" Channel="Output" Type="Digital" Desc="If the port is in _DigitalOutput mode this server is used to change the value of the digital output at the C/Q pin (pin 4) of the SDCI port" />
+
+    <Script Name="SDCI_Device">
+      <Parameter Name="ReadPdoSizeValue"  Type="Client" Channel="ReadPdoSize"  Desc="" />
+      <Parameter Name="WritePdoSizeValue" Type="Client" Channel="WritePdoSize" Desc="" />
+    </Script>   
+	</Class>
+</HWClassInfo>

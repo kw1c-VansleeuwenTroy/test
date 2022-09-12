@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<WatchVariable>
+	<Variable Name="AI043_FIRMWARE_MAX_CFG16"/>
+	<Variable Name="ai2"/>
+	<Variable Name="AI2"/>
+</WatchVariable>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<IOConnectionManager Version="2" Detail="0" PLC="">
+	<!-- List of Entries -->
+	<Entry Name="IO_Element1" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="AI0431" Server="AI2" ObjClt="pumpControl1" Client="ActFillLevel" IOI="Input" Type="Analog" SortIndex="5" KeyName="000005"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="IO_Element2" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="SDM0811" Server="Safe_Input1" ObjClt="pumpControl1" Client="test2" IOI="Input" Type="Digital" SortIndex="7" KeyName="000002"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="IO_Element3" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="SDM0811" Server="Safe_Input2" ObjClt="pumpControl1" Client="test1" IOI="Input" Type="Digital" SortIndex="8" KeyName="000006"/>
+		</IOConnections>
+	</Entry>
+	<!-- List of Folders -->
+</IOConnectionManager>

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HWClassInfo>
+  <HWDevice ModuleID="1081" SubModuleID="0x0" ModType="M_SDIAS" Desc="SDIAS Analog In Module&#xD;&#xA;4x Analog In +/- 11V" OrderNr="20-009-046">
+    <Types>
+      <Device Name="AI046" ClassName="AI046" DisplayGroup="Analog" Default="true" PowerLoss="2500">
+        <Power Voltage="5000" Supply="0" Drain="0" />
+        <Power Voltage="24000" Supply="0" Drain="35" />
+      </Device>
+    </Types>
+    <VisualData>
+      <VisualView TypeId="0" Size="10,120">
+        <VisualModule ImgPath=".\S-Dias\S-DIAS Grundmodul.xaml" Position="0,0" Width="12.5" Height="101.8">
+          <!-- Texte -->
+          <VisualTexts>
+            <VisualText Text="AI  046" FontFamily="ARIAL" Italic="true" FontSize="12" ClrForeground="4294967295" FontWeight="700" LineHeight="10" Width="7.94" Height="5.82" Left="4.62" Top="10.22" ClrBackground="16777215" />
+            <VisualText Text="S" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="9" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="11.64" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X1" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="15.61" FontWeight="400" />
+            <VisualText Text="U+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.81" Left="0.26" Top="17.99" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="1+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="21.17" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="1-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="24.34" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="27.52" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X2" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="30.96" FontWeight="400" />
+            <VisualText Text="U+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="33.34" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="2+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="36.51" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="2-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="39.69" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="42.86" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X3" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="46.3" FontWeight="400" />
+            <VisualText Text="U+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="48.68" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="3+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="51.86" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="3-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="55.03" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="58.21" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X4" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="61.65" FontWeight="400" />
+            <VisualText Text="U+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="64.03" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="4+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="67.2" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="4-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="70.38" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="73.55" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X5" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="76.99" FontWeight="400" />
+            <VisualText Text="U+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="79.38" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="82.55" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="85.72" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="88.9" ClrBackground="16777215" FontWeight="400" />
+          </VisualTexts>
+          <!-- Leds -->
+          <VisualLeds>
+            <VisualLed Description="Module state" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="10.32">
+              <Behaviour ClrForeground="1343356672" Interval="100">
+                <Activator TypeId="4" Value="0">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="0" Value="0" Negate="true" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="200">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.ClassState" Value="0" Negate="true" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed DataString="AI046.LedControl" Description="User" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="12.96">
+              <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="AI046.LedControl" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="500">
+                <Activator TypeId="3" DataString="AI046.LedControl" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="250">
+                <Activator TypeId="3" DataString="AI046.LedControl" Value="3" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X1-->
+            <VisualLed Description="Sensor 1 active" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="1.9" Top="19.3">
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="4" Value="0">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="0" Value="0" Negate="true" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="3" DataString="AI046.Voltage24V" Value="0" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="AI046.AI1SetLed" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="3" DataString="AI046.AI1SetLed" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="100">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI1Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.5" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI1SetLed" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI1Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI1SetLed" Value="0" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.5" Value="0" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.1" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="1000">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI1Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.1" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI1SetLed" Value="0" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <!-- X2-->
+            <VisualLed Description="Sensor 2 active" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.26" Top="34.66">
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="4" Value="0">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="0" Value="0" Negate="true" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="3" DataString="AI046.Voltage24V" Value="0" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="AI046.AI2SetLed" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="3" DataString="AI046.AI2SetLed" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="100">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI2Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.6" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI2SetLed" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI2Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI2SetLed" Value="0" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.6" Value="0" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.2" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="1000">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI2Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.2" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI2SetLed" Value="0" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <!-- X3-->
+            <VisualLed Description="Sensor 3 active" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.26" Top="50.22">
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="4" Value="0">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="0" Value="0" Negate="true" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="3" DataString="AI046.Voltage24V" Value="0" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="AI046.AI3SetLed" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="3" DataString="AI046.AI3SetLed" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="100">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI3Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.7" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI3SetLed" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI3Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI3SetLed" Value="0" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.7" Value="0" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.3" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="1000">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI1Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.3" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI1SetLed" Value="0" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <!-- X4-->
+            <VisualLed Description="Sensor 4 active" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.11" Top="65.92">
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="4" Value="0">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="0" Value="0" Negate="true" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="3" DataString="AI046.Voltage24V" Value="0" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="AI046.AI4SetLed" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="1343356672">
+                <Activator TypeId="3" DataString="AI046.AI4SetLed" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="100">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI4Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.8" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI4SetLed" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI4Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI4SetLed" Value="0" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.8" Value="0" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.4" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="1000">
+                <Activator TypeId="4">
+                  <Activator TypeId="2" DataString="AI046.AI4Active" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.RangeError.4" Value="1" />
+                  <Activator TypeId="3" DataString="AI046.AI4SetLed" Value="0" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <!-- X5-->
+            <VisualLed Description="Voltage ok" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="80.7">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="AI046.Voltage24V" Value="1" />
+              </Behaviour>
+            </VisualLed>
+          </VisualLeds>
+          <!-- Stecker -->
+          <VisualConnectors>
+            <VisualConnector Description="X1" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="16.93">
+              <ConnectorPin DataString="AI046.AI1" Description="Sensorsupply 1+" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI1" Description="AnalogIn 1+" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI1" Description="AnalogIn 1-" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI1" Description="Sensorsupply 1-" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X2" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="32.28">
+              <ConnectorPin DataString="AI046.AI2" Description="Sensorsupply 2+" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI2" Description="AnalogIn 2+" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI2" Description="AnalogIn 2-" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI2" Description="Sensorsupply 2-" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X3" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="47.62">
+              <ConnectorPin DataString="AI046.AI3" Description="Sensorsupply 3+" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI3" Description="AnalogIn 3+" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI3" Description="AnalogIn 3-" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI3" Description="Sensorsupply 3-" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X4" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="62.97">
+              <ConnectorPin DataString="AI046.AI4" Description="Sensorsupply 4+" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI4" Description="AnalogIn 4+" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI4" Description="AnalogIn 4-" TypeId="1" />
+              <ConnectorPin DataString="AI046.AI4" Description="Sensorsupply 4-" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X5" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="78.32">
+              <ConnectorPin DataString="AI046.Voltage24V" Description="+24 Volt" TypeId="1" />
+              <ConnectorPin DataString="AI046.Voltage24V" Description="+24 Volt" TypeId="1" />
+              <ConnectorPin DataString="AI046.Voltage24V" Description="Ground" TypeId="1" />
+              <ConnectorPin DataString="AI046.Voltage24V" Description="Ground" TypeId="1" />
+            </VisualConnector>
+          </VisualConnectors>
+        </VisualModule>
+      </VisualView>
+    </VisualData>
+  </HWDevice>
+  <Class Name="AI046">
+    <Uplink Name="SdiasIn" BusType="SDIAS" PlaceName="Place" />
+	
+	<Downlink Name="ClassState" Port="0" BusType="Hardwarealarme" Desc="Hardwarealarme" />
+	
+    <!-- General -->
+    <Property Name="Required" Channel="Required" Editor="Combo:1=Module is required;0=Module is not required" Desc="0=module is not required 1=module is required (CPU will crash if module is missing)" />
+    <IOState Name="Class State" Channel="ClassState" Desc="This server shows the status of the hardware class. If the value is greater than 0, an error has occurred " Type="" />
+    <IOState Name="Device ID" Channel="DeviceID" IsInfo="true" Type="" Desc="This server shows the device ID  of the hardware module" />
+    <IOState Name="FPGA Version" Channel="FPGAVersion" Format="V{5-8}.{1-4}" IsInfo="true" Desc="Shows the actual FPGA version of the module in the format x.y (e.g. 16#10 means v1.0)" />
+    <IOState Name="Hardware Version" Channel="HwVersion" IsInfo="true" Format="V{9-16}.{5-8}{1-4}" Type="" Desc="Shows the hardware version of the module" />
+    <IOState Name="Serial Number" Channel="SerialNo" IsInfo="true" Type="" Desc="Shows the Serial Number of the hardware module" />
+    <IOState Name="Retry Counter" Channel="RetryCounter" Desc="Is incremented in case of incorrect data transfer." />
+    <Output Name="LED Control" Channel="LEDControl" Type="Digital" Desc="Sets a LED on hardware, to detect module.&#xD;&#xA;0..LED off&#xD;&#xA;1..LED on&#xD;&#xA;2..blinking slowly&#xD;&#xA;3..blinking fast" />
+    <Property Name="Samples Rate" Channel="SampleRate" Editor="Combo:0=1 SamplePerMs (1msec conversion time); 1=2 SamplesPerMs (500µsec conversion time); 2=4 SamplesPerMs (250µsec conversion time); 3=5 SamplesPerMs (200µsec conversion time); 4=10 SamplesPerMs (100µsec conversion time); 5=20 SamplesPerMs (50µsec conversion time); 6=40 SamplesPerMs (25µsec conversion time); 7=50 SamplesPerMs (20µsec conversion time); 8=100 SamplesPerMs (10µsec conversion time)" Desc="this client set amount of samples per cycle as init value! Minimum conversion time of one analog input is 5 microsec. e.g. calculation of max values per cycle:&#xD;&#xA;cycle time 1000microsec and conversion of all 4 inputs activated&#xD;&#xA;cycle time /(AnalogInputs*Conversion time)=SampleRate   1000microsec /(4*5microsec)=50&#xD;&#xA;0=Max values per channel are calculated automatically" />
+    <Property Name="Values Size" Channel="ValuesSize" Editor="Combo:0=16 bit; 1=18 bit" Desc="Set size of one value &#xD;&#xA;0..16Bit = 2Byte &#xD;&#xA;1..18Bit = 4Byte" />
+    <IOState Name="Voltage 24V" Channel="Voltage24V" Type="Digital" Desc="Voltage 24V: 0..ok, 1..not ok" />
+    <IOState Name="Oversample Mode" Channel="OversampleMode" Type="Digital" Editor="Change between FPGA- / ADC-Oversampling &#xD;&#xA;0=FPGA(default)&#xD;&#xA;1=ADC" DefValue="0" Desc="Set Oversampling Mode: &#xD;&#xA;0..FPGA(default)&#xD;&#xA;1..ADC" />
+    <IOState Name="ADC configuration valid" Channel="ConfigValid" Type="Digital" Desc=" 1..configuration of the ADCs is valid&#xD;&#xA; 0..configuration of the ADCs is not valid&#xD;&#xA;-1..failed to send configuration to ADCs" />    
+    <IOState Name="Range Error" Channel="RangeError" Type="Analog" Desc="Range detection: &#xD;&#xA;Bit0..low range on AI1&#xD;&#xA;Bit1..low range on AI2&#xD;&#xA;Bit2..low range on AI3&#xD;&#xA;Bit3..low range on AI4&#xD;&#xA;(cablebreak)&#xD;&#xA;Bit4..high range on AI1&#xD;&#xA;Bit5..high range on AI2&#xD;&#xA;Bit6..high range on AI3&#xD;&#xA;Bit7..high range on AI4&#xD;&#xA;" />
+    <!-- Analog Input 1 -->
+    <IOComment Name="---------------------- Analog Input 1 ----------------------" IsInfo="true" Desc=""/>
+    <Input Name="Analog Input 1" Channel="AI1" IsConfig="true" Desc="Analog Input 1. First value from memory is displayed according to settings of AIxMaxValue, AIxMinValue and AIxGain. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI1 Channel Active" Channel="AI1Active" Editor="Combo:0=channel is not activated ;1=channel is activated " Desc="0..channel is not activated&#xD;&#xA;1..channel is activated" />
+      <Property Name="AI1 Maximal Value" Channel="AI1MaxValue" Desc="The scale of the analog input can be selected by this client (corresponds to +/-11V)&#xD;&#xA; As initvalue" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI1 Minimal Value" Channel="AI1MinValue" Desc="The scale of the analog input can be selected by this client (corresponds to +/-11V)&#xD;&#xA; As initvalue" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI1 cut off frequency" Channel="AI1Freq" Editor="Combo:0=off ; 1=10 kHz; 2=5 kHz; 3=1000 Hz; 4=500 Hz; 5=100 Hz; 6=50 Hz; 7=25 Hz; 8=10 Hz" Desc="Cut off frequency for analog in 1 low pass filter &#xD;&#xA;0..off (default)&#xD;&#xA;1..10 kHz&#xD;&#xA;2..5 kHz&#xD;&#xA;3..1000 Hz(1kHz)&#xD;&#xA;4..500 Hz&#xD;&#xA;5..100 Hz&#xD;&#xA;6..50 Hz&#xD;&#xA;7..25 Hz&#xD;&#xA;8..10 Hz" />
+      <Property Name="AI1 Gain" Channel="AI1Gain" Type="Analog" Desc="Analog Input 1 Gain:&#xD;&#xA;0..gain of x1&#xD;&#xA;1..gain of x10" Editor="Combo:0=gain of x1; 1=gain of x10" />
+      <Property Name="AI1 Set Led" Channel="AI1SetLed" Type="Analog" Desc="Analog Input 1 LED Overwrite Register:&#xD;&#xA;0..HW Status activ&#xD;&#xA;1..LED on&#xD;&#xA;2..LED off" Editor="Combo:0=HW Status activ; 1=LED on; 2=LED off" />
+    </Input>
+    <IOState Name="AI1 Gain" Channel="AI1Gain" Type="Analog" Desc="Analog Input 1 Gain:&#xD;&#xA;0..gain of x1&#xD;&#xA;1..gain of x10" Editor="Combo:0=gain of x1; 1=gain of x10" />
+    <IOState Name="AI1 Set Led" Channel="AI1SetLed" Type="Analog" Desc="Analog Input 1 LED Overwrite Register:&#xD;&#xA;0..HW Status activ&#xD;&#xA;1..LED on&#xD;&#xA;2..LED off" Editor="Combo:0=HW Status activ; 1=LED on; 2=LED off" />
+    <!-- Analog Input 2 -->
+    <IOComment Name="---------------------- Analog Input 2 ----------------------" IsInfo="true" Desc=""/>
+    <Input Name="Analog Input 2" Channel="AI2" IsConfig="true" Desc="Analog Input 2. First value from memory buffer is displayed according to settings of AIxMaxValue, AIxMinValue and AIxGain. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI2 Channel Active" Channel="AI2Active" Editor="Combo:0=channel is not activated ;1=channel is activated " Desc="0..channel is not activated&#xD;&#xA;1..channel is activated" />
+      <Property Name="AI2 Maximal Value" Channel="AI2MaxValue" Desc="The scale of the analog input can be selected by this client (corresponds to +/-11V)&#xD;&#xA; As initvalue" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI2 Minimal Value" Channel="AI2MinValue" Desc="The scale of the analog input can be selected by this client (corresponds to +/-11V)&#xD;&#xA; As initvalue" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI2 cut off frequency" Channel="AI2Freq" Editor="Combo:0=off ; 1=10 kHz; 2=5 kHz; 3=1000 Hz; 4=500 Hz; 5=100 Hz; 6=50 Hz; 7=25 Hz; 8=10 Hz" Desc="Cut off frequency for analog in 2 low pass filter &#xD;&#xA;0..off (default)&#xD;&#xA;1..10 kHz&#xD;&#xA;2..5 kHz&#xD;&#xA;3..1000 Hz(1kHz)&#xD;&#xA;4..500 Hz&#xD;&#xA;5..100 Hz&#xD;&#xA;6..50 Hz&#xD;&#xA;7..25 Hz&#xD;&#xA;8..10 Hz" />
+      <Property Name="AI2 Gain" Channel="AI2Gain" Type="Analog" Desc="Analog Input 2 Gain:&#xD;&#xA;0..gain of x1&#xD;&#xA;1..gain of x10" Editor="Combo:0=gain of x1; 1=gain of x10" />
+      <Property Name="AI2 Set Led" Channel="AI2SetLed" Type="Analog" Desc="Analog Input 2 LED Overwrite Register:&#xD;&#xA;0..HW Status activ&#xD;&#xA;1..LED on&#xD;&#xA;2..LED off" Editor="Combo:0=HW Status activ; 1=LED on; 2=LED off" />
+    </Input>
+    <IOState Name="AI2 Gain" Channel="AI2Gain" Type="Analog" Desc="Analog Input 2 Gain:&#xD;&#xA;0..gain of x1&#xD;&#xA;1..gain of x10" Editor="Combo:0=gain of x1; 1=gain of x10" />
+    <IOState Name="AI2 Set Led" Channel="AI2SetLed" Type="Analog" Desc="Analog Input 2 LED Overwrite Register:&#xD;&#xA;0..HW Status activ&#xD;&#xA;1..LED on&#xD;&#xA;2..LED off" Editor="Combo:0=HW Status activ; 1=LED on; 2=LED off" />
+    <!-- Analog Input 3 -->
+    <IOComment Name="---------------------- Analog Input 3 ----------------------" IsInfo="true" Desc=""/>
+    <Input Name="Analog Input 3" Channel="AI3" IsConfig="true" Desc="Analog Input 3. First value from memory buffer is displayed according to settings of AIxMaxValue, AIxMinValue and AIxGain. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI3 Channel Active" Channel="AI3Active" Editor="Combo:0=channel is not activated ;1=channel is activated " Desc="0..channel is not activated&#xD;&#xA;1..channel is activated" />
+      <Property Name="AI3 Maximal Value" Channel="AI3MaxValue" Desc="The scale of the analog input can be selected by this client (corresponds to +/-11V)&#xD;&#xA; As initvalue" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI3 Minimal Value" Channel="AI3MinValue" Desc="The scale of the analog input can be selected by this client (corresponds to +/-11V)&#xD;&#xA; As initvalue" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI3 cut off frequency" Channel="AI3Freq" Editor="Combo:0=off ; 1=10 kHz; 2=5 kHz; 3=1000 Hz; 4=500 Hz; 5=100 Hz; 6=50 Hz; 7=25 Hz; 8=10 Hz" Desc="Cut off frequency for analog in 3 low pass filter &#xD;&#xA;0..off (default)&#xD;&#xA;1..10 kHz&#xD;&#xA;2..5 kHz&#xD;&#xA;3..1000 Hz(1kHz)&#xD;&#xA;4..500 Hz&#xD;&#xA;5..100 Hz&#xD;&#xA;6..50 Hz&#xD;&#xA;7..25 Hz&#xD;&#xA;8..10 Hz" />
+      <Property Name="AI3 Gain" Channel="AI3Gain" Type="Analog" Desc="Analog Input 3 Gain:&#xD;&#xA;0..gain of x1&#xD;&#xA;1..gain of x10" Editor="Combo:0=gain of x1; 1=gain of x10" />
+      <Property Name="AI3 Set Led" Channel="AI3SetLed" Type="Analog" Desc="Analog Input LED Overwrite Register:&#xD;&#xA;0..HW Status activ&#xD;&#xA;1..LED on&#xD;&#xA;2..LED off" Editor="Combo:0=HW Status activ; 1=LED on; 2=LED off" />
+    </Input>
+    <IOState Name="AI3 Gain" Channel="AI3Gain" Type="Analog" Desc="Analog Input 3 Gain:&#xD;&#xA;0..gain of x1&#xD;&#xA;1..gain of x10" Editor="Combo:0=gain of x1; 1=gain of x10" />
+    <IOState Name="AI3 Set Led" Channel="AI3SetLed" Type="Analog" Desc="Analog Input LED Overwrite Register:&#xD;&#xA;0..HW Status activ&#xD;&#xA;1..LED on&#xD;&#xA;2..LED off" Editor="Combo:0=HW Status activ; 1=LED on; 2=LED off" />
+    <!-- Analog Input 4 -->
+    <IOComment Name="---------------------- Analog Input 4 ----------------------" IsInfo="true" Desc=""/>
+    <Input Name="Analog Input 4" Channel="AI4" IsConfig="true" Desc="Analog Input 4. First value from memory buffer is displayed according to settings of AIxMaxValue, AIxMinValue and AIxGain. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI4 Channel Active" Channel="AI4Active" Editor="Combo:0=channel is not activated ;1=channel is activated " Desc="0..channel is not activated&#xD;&#xA;1..channel is activated" />
+      <Property Name="AI4 Maximal Value" Channel="AI4MaxValue" Desc="The scale of the analog input can be selected by this client (corresponds to +/-11V)&#xD;&#xA; As initvalue" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI4 Minimal Value" Channel="AI4MinValue" Desc="The scale of the analog input can be selected by this client (corresponds to +/-11V)&#xD;&#xA; As initvalue" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI4 cut off frequency" Channel="AI4Freq" Editor="Combo:0=off ; 1=10 kHz; 2=5 kHz; 3=1000 Hz; 4=500 Hz; 5=100 Hz; 6=50 Hz; 7=25 Hz; 8=10 Hz" Desc="Cut off frequency for analog in 4 low pass filter &#xD;&#xA;0..off (default)&#xD;&#xA;1..10 kHz&#xD;&#xA;2..5 kHz&#xD;&#xA;3..1000 Hz(1kHz)&#xD;&#xA;4..500 Hz&#xD;&#xA;5..100 Hz&#xD;&#xA;6..50 Hz&#xD;&#xA;7..25 Hz&#xD;&#xA;8..10 Hz" />
+      <Property Name="AI4 Gain" Channel="AI4Gain" Type="Analog" Desc="Analog Input 4 Gain:&#xD;&#xA;0..gain of x1&#xD;&#xA;1..gain of x10" Editor="Combo:0=gain of x1; 1=gain of x10" />
+      <Property Name="AI4 Set Led" Channel="AI4SetLed" Type="Analog" Desc="Analog Input 4 LED Overwrite Register:&#xD;&#xA;0..HW Status activ&#xD;&#xA;1..LED on&#xD;&#xA;2..LED off" Editor="Combo:0=HW Status activ; 1=LED on; 2=LED off" />
+    </Input>
+    <IOState Name="AI4 Gain" Channel="AI4Gain" Type="Analog" Desc="Analog Input 4 Gain:&#xD;&#xA;0..gain of x1&#xD;&#xA;1..gain of x10" Editor="Combo:0=gain of x1; 1=gain of x10" />
+    <IOState Name="AI4 Set Led" Channel="AI4SetLed" Type="Analog" Desc="Analog Input 4 LED Overwrite Register:&#xD;&#xA;0..HW Status activ&#xD;&#xA;1..LED on&#xD;&#xA;2..LED off" Editor="Combo:0=HW Status activ; 1=LED on; 2=LED off" />
+    <Script Name="AI046">
+      <Parameter Name="SampleRate" Type="Client" Channel="SampleRate" Desc="" />
+      <Parameter Name="ValuesSize" Type="Client" Channel="ValuesSize" Desc="" />
+      <Parameter Name="AI1Active" Type="Client" Channel="AI1Active" Desc="" />
+      <Parameter Name="AI2Active" Type="Client" Channel="AI2Active" Desc="" />
+      <Parameter Name="AI3Active" Type="Client" Channel="AI3Active" Desc="" />
+      <Parameter Name="AI4Active" Type="Client" Channel="AI4Active" Desc="" />
+      <Code>
+def compPost_AI046(element, parameters):
+  if parameters['varanBridge']:
+    parameters['AddToSDiasTime'] = True
+    element['result']['optional'] = {'PDO': {'Wr':[], 'Rd':[], 'WrDyn':[], 'RdDyn':[]}}    
+    SDIASPDORdAdd(0x4,element)  # Default Access
+    SampleRateCalc = [1,2,4,5,10,20,40,50,100]  
+    
+    NoChannels = 0
+    if operator.gt(element['options']['AI1Active'], 0):
+      NoChannels += 1
+    if operator.gt(element['options']['AI2Active'], 0):
+      NoChannels += 1;
+    if operator.gt(element['options']['AI3Active'], 0):
+      NoChannels += 1;
+    if operator.gt(element['options']['AI4Active'], 0):
+      NoChannels += 1;
+     
+    ValPerMs = element['options']['SampleRate']
+    udBusCycleTimeMicroSec = parameters['BusCycleTime'] / 1000
+    # If Channels are active
+    if operator.gt(NoChannels, 0):
+      uiMaxValuesCycle = SampleRateCalc[int(ValPerMs)]    
+      uiMaxValuesCycle = uiMaxValuesCycle * (udBusCycleTimeMicroSec / 1000)
+      if element['options']['ValuesSize'] == 0:
+        uiMaxValuesCycle = uiMaxValuesCycle * 2
+      else:
+        uiMaxValuesCycle = uiMaxValuesCycle * 4
+      
+      if operator.gt(uiMaxValuesCycle,2048):
+        uiMaxValuesCycle = 2048
+            
+      for i in range(1,NoChannels+1): 
+        uiNextDOLength = (uiMaxValuesCycle)
+
+        while uiNextDOLength != 0:
+          if operator.gt(uiNextDOLength,0x80):
+            uiActDoLength = 0x80
+          else:
+            uiActDoLength = uiNextDOLength
+            
+          SDIASPDORdAdd(uiActDoLength,element)
+          uiNextDOLength -= uiActDoLength
+
+</Code>
+    </Script>
+  </Class>
+</HWClassInfo>

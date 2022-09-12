@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CPU>
+	<Object Name="HwControl1" Class="HwControl"/>
+	<Object Name="SdiasPLC1" Class="SdiasPLC"/>
+	<MODULES>
+		<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+		<MODUL
+			Device = "DM161"
+			ID     = "1029"
+			SubID  = "0"
+			Pos    = "0"
+			Bus    = "136">
+			<MODULES>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+			</MODULES>
+		</MODUL>
+		<MODUL
+			Device = "AI043"
+			ID     = "1045"
+			SubID  = "0"
+			Pos    = "1"
+			Bus    = "136">
+			<MODULES>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+			</MODULES>
+		</MODUL>
+		<MODUL
+			Device = "SCP111"
+			ID     = "1049"
+			SubID  = "0"
+			Pos    = "2"
+			Bus    = "136">
+			<MODULES>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+				<MODUL
+					Device = "SDM081"
+					ID     = "5"
+					SubID  = "1"
+					Pos    = "0"
+					Bus    = "146">
+					<MODULES>
+						<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+					</MODULES>
+				</MODUL>
+				<MODUL Device="" ID="" SubID="" Pos="1" Bus="146"/>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="135"/>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+			</MODULES>
+		</MODUL>
+		<MODUL
+			Device = "AI084"
+			ID     = "1026"
+			SubID  = "0"
+			Pos    = "3"
+			Bus    = "136">
+			<MODULES>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+			</MODULES>
+		</MODUL>
+		<MODUL Device="" ID="" SubID="" Pos="4" Bus="136"/>
+		<MODUL
+			Device = "VaranManager_1"
+			ID     = "1"
+			SubID  = "0"
+			Pos    = "0"
+			Bus    = "150">
+			<MODULES>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="0"/>
+				<MODUL Device="" ID="" SubID="" Pos="0" Bus="129"/>
+			</MODULES>
+		</MODUL>
+	</MODULES>
+</CPU>

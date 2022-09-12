@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DataAnalyser
+	VerSet        = "0.01"
+	Samplerate    = "1000"
+	DA_Type       = "0"
+	MaxMemTime    = "0"
+	MaxMem        = "20"
+	TimeRangeStr  = "100000 ms"
+	TimeOffsetStr = "0 ms"
+	TimeRange     = "100000"
+	TimeOffset    = "0"
+	ScreenView    = "TREND">
+	<DA_TriggerStart
+		Active    = "false"
+		Type      = "Start"
+		Condition = "Greater or Equal"
+		Channel   = "Results">
+	</DA_TriggerStart>
+	<DA_TriggerStop Active="false" Type="Stop" Condition="Greater or Equal">
+	</DA_TriggerStop>
+	<DA_Channels>
+		<DA_Channel
+			Name        = "SinusGenerator1.Result"
+			Type        = "DINT"
+			ChannelInfo = "SinusGenerator1.Result"
+			ChannelSize = "4"
+			BitIndex    = "0"
+			Color       = "1331655"
+			Active      = "true"
+			LimitHi     = "100000"
+			LimitLo     = "-100000"
+			IsServer    = "true">
+		</DA_Channel>
+	</DA_Channels>
+	<DA_AuxLines>
+	</DA_AuxLines>
+</DataAnalyser>

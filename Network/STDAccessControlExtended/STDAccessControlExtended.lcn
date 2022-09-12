@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="STDAccessControlExtended" Revision="1.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "_BitAccessTitle"
+			GUID       = "{239C3136-7F5C-4869-9663-5DDDD0BE8277}"
+			Class      = "_Bit32"
+			Position   = "(90,1620)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="Data" Value="2#11111111"/>
+			</Channels>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+	</Connections>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+	<RevDoku>
+		<Owner Company="Sigmatek"/>
+		<Dokumentation Revision="1.0" Date="2016-05-25" Company="Sigmatek" Description="start release"/>
+	</RevDoku>
+</Network>

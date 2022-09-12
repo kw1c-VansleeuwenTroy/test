@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="Pump" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "pumpControl1"
+			GUID       = "{A94E6BCB-5DC6-42E6-AC8E-4CDCAA233206}"
+			Class      = "pumpControl"
+			Position   = "(990,180)"
+			Visualized = "true"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="ActFillLevelVisu"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="MaxBorder" Value="800"/>
+				<Server Name="MinBorder"/>
+				<Server Name="PumpVisu"/>
+				<Server Name="tt"/>
+				<Server Name="ttt"/>
+				<Server Name="tttt"/>
+				<Client Name="ActFillLevel" Value="0"/>
+				<Client Name="Pump" Value="0"/>
+				<Client Name="test1"/>
+				<Client Name="test2"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "pumpControl2"
+			GUID       = "{5674CC20-1C44-4ACA-9FC7-99AD4EAD46EA}"
+			Class      = "pumpControl"
+			Position   = "(480,750)"
+			Visualized = "true"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="ActFillLevelVisu"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="MaxBorder" Value="800"/>
+				<Server Name="MinBorder"/>
+				<Server Name="PumpVisu"/>
+				<Server Name="tt"/>
+				<Server Name="ttt"/>
+				<Server Name="tttt"/>
+				<Client Name="ActFillLevel" Value="0"/>
+				<Client Name="Pump" Value="0"/>
+				<Client Name="test1"/>
+				<Client Name="test2"/>
+			</Channels>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="pumpControl1.ActFillLevel" Destination="__IO_Element31" Vertices="(990,330),(810,330)," IOObject="IO_Element1"/>
+		<Connection Source="pumpControl1.test1" Destination="__IO_Element41" Vertices="(990,450),(810,450)," IOObject="IO_Element3"/>
+		<Connection Source="pumpControl1.test2" Destination="__IO_Element11" Vertices="(990,390),(810,390)," IOObject="IO_Element2"/>
+	</Connections>
+	<!-- List of temp data objects in this network -->
+	<IOObjects>
+		<IOObject KeyName="__IO_Element11" Name="IO_Element2" Position="(510,360)" Client="pumpControl1.test2"/>
+		<IOObject KeyName="__IO_Element31" Name="IO_Element1" Position="(510,300)" Client="pumpControl1.ActFillLevel"/>
+		<IOObject KeyName="__IO_Element41" Name="IO_Element3" Position="(510,420)" Client="pumpControl1.test1"/>
+	</IOObjects>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

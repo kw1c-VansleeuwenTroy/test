@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HWClassInfo>
+  <HWDevice ModuleID="1048" SubModuleID="0x0" ModType="M_SDIAS" Desc="SDIAS Analog In Module; 4x Analog In, 4x Fifo buffer" OrderNr="20-009-040">
+    <Types>
+      <Device Name="AI040" ClassName="AI040" DisplayGroup="Analog" Default="true" PowerLoss="2500">
+        <Power Voltage="5000" Supply="0" Drain="0"/>
+        <Power Voltage="24000" Supply="0" Drain="40"/>
+      </Device>
+    </Types>
+    <VisualData>
+      <VisualView TypeId="0" Size="10,120">
+        <VisualModule ImgPath=".\S-Dias\S-DIAS Grundmodul.xaml" Position="0,0" Width="12.5" Height="101.8">
+          <!-- Texte -->
+          <VisualTexts>
+            <VisualText Text="AI 040" FontFamily="ARIAL" Italic="true" FontSize="12" ClrForeground="4294967295" FontWeight="1" LineHeight="10" Width="7.94" Height="5.82" Left="4.76" Top="10.05" />
+            <VisualText Text="S" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="9" />
+            <VisualText Text="U" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="11.64" />
+            <VisualText Text="X1" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="15.61" />
+            <VisualText Text="1+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.81" Left="0.26" Top="17.99" />
+            <VisualText Text="1-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="21.17" />
+            <VisualText Text="SH" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="24.34" />
+            <VisualText Text="SH" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="27.52" />
+            <VisualText Text="X2" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="30.96" />
+            <VisualText Text="2+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="33.34" />
+            <VisualText Text="2-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="36.51" />
+            <VisualText Text="SH" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="39.69" />
+            <VisualText Text="SH" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="42.86" />
+            <VisualText Text="X3" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="46.3" />
+            <VisualText Text="3+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="48.68" />
+            <VisualText Text="3-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="51.86" />
+            <VisualText Text="SH" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="55.03" />
+            <VisualText Text="SH" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="58.21" />
+            <VisualText Text="X4" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="61.65" />
+            <VisualText Text="4+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="64.03" />
+            <VisualText Text="4-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="67.2" />
+            <VisualText Text="SH" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="70.38" />
+            <VisualText Text="SH" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="73.55" />
+            <VisualText Text="X5" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="76.99" />
+            <VisualText Text="24" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="79.38" />
+            <VisualText Text="24" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="82.55" />
+            <VisualText Text="0V" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="85.72" />
+            <VisualText Text="0V" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="88.9" />
+          </VisualTexts>
+          <!-- Leds -->
+          <VisualLeds>
+            <VisualLed Description="Module state" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="10.32">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="AI040.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="200">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" Negate="true" DataString="AI040.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed DataString="AI040.LedControl" Description="User" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="12.96">
+              <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="AI040.LedControl" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="500">
+                <Activator TypeId="3" DataString="AI040.LedControl" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="250">
+                <Activator TypeId="3" DataString="AI040.LedControl" Value="3" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X1-->
+            <VisualLed Description="Sensor 1 active" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="19.31">
+              <Behaviour ClrForeground="4278255360">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI1Active" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Sensor 1 error" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342177535" Width="1.32" Height="1.32" Left="2.12" Top="22.49">
+              <Behaviour ClrForeground="4278190335">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI1CableBreak" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>							
+              </Behaviour>
+              <Behaviour ClrForeground="4278190335" Interval="1000">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI1ShortCircuit" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>							
+              </Behaviour>
+            </VisualLed>
+            <!-- X2-->
+            <VisualLed Description="Sensor 2 active" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="34.66">
+              <Behaviour ClrForeground="4278255360">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI2Active" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>              
+							</Behaviour>
+            </VisualLed>
+            <VisualLed Description="Sensor 2 error" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342177535" Width="1.32" Height="1.32" Left="2.12" Top="37.84">
+              <Behaviour ClrForeground="4278190335">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI2CableBreak" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>							
+              </Behaviour>
+              <Behaviour ClrForeground="4278190335" Interval="1000">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI2ShortCircuit" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>							
+              </Behaviour>
+            </VisualLed>
+            <!-- X3-->
+            <VisualLed Description="Sensor 3 active" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="50.01">
+              <Behaviour ClrForeground="4278255360">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI3Active" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Sensor 3 error" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342177535" Width="1.32" Height="1.32" Left="2.12" Top="53.18">
+              <Behaviour ClrForeground="4278190335">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI3CableBreak" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>							
+              </Behaviour>
+              <Behaviour ClrForeground="4278190335" Interval="1000">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI3ShortCircuit" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>							
+              </Behaviour>            
+						</VisualLed>
+            <!-- X4-->
+            <VisualLed Description="Sensor 4 active" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="65.35">
+              <Behaviour ClrForeground="4278255360">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI4Active" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>              
+							</Behaviour>
+            </VisualLed>
+            <VisualLed Description="Sensor 4 Error" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342177535" Width="1.32" Height="1.32" Left="2.12" Top="68.53">
+              <Behaviour ClrForeground="4278190335">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI4CableBreak" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>							
+              </Behaviour>
+              <Behaviour ClrForeground="4278190335" Interval="1000">
+								<Activator TypeId="4" >
+									<Activator TypeId="3" DataString="AI040.AI4ShortCircuit" Value="1" />
+									<Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+								</Activator>							
+              </Behaviour>            
+						</VisualLed>
+            <!-- X5-->
+            <VisualLed Description="Voltage ok" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="80.7">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="AI040.Voltage24V" Value="1" />
+              </Behaviour>
+            </VisualLed>
+          </VisualLeds>
+          <!-- Stecker -->
+          <VisualConnectors>
+            <VisualConnector Description="X1" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="16.93">
+              <ConnectorPin DataString="AI040.AI1" Description="Sensor 1+" TypeId="1" />
+              <ConnectorPin DataString="AI040.AI1" Description="Sensor 1-" TypeId="1" />
+              <ConnectorPin DataString="" Description="Shielding" TypeId="0" />
+              <ConnectorPin DataString="" Description="Shielding" TypeId="0" />
+            </VisualConnector>
+            <VisualConnector Description="X2" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="32.28">
+              <ConnectorPin DataString="AI040.AI2" Description="Sensor 2+" TypeId="1" />
+              <ConnectorPin DataString="AI040.AI2" Description="Sensor 2-" TypeId="1" />
+              <ConnectorPin DataString="" Description="Shielding" TypeId="0" />
+              <ConnectorPin DataString="" Description="Shielding" TypeId="0" />
+            </VisualConnector>
+            <VisualConnector Description="X3" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="47.62">
+              <ConnectorPin DataString="AI040.AI3" Description="Sensor 3+" TypeId="1" />
+              <ConnectorPin DataString="AI040.AI3" Description="Sensor 3-" TypeId="1" />
+              <ConnectorPin DataString="" Description="Shielding" TypeId="0" />
+              <ConnectorPin DataString="" Description="Shielding" TypeId="0" />
+            </VisualConnector>
+            <VisualConnector Description="X4" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="62.97">
+              <ConnectorPin DataString="AI040.AI4" Description="Sensor 4+" TypeId="1" />
+              <ConnectorPin DataString="AI040.AI4" Description="Sensor 4-" TypeId="1" />
+              <ConnectorPin DataString="" Description="Shielding" TypeId="0" />
+              <ConnectorPin DataString="" Description="Shielding" TypeId="0" />
+            </VisualConnector>
+            <VisualConnector Description="X5" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="78.32">
+              <ConnectorPin DataString="AI040.Voltage24V" Description="+24 Volt" TypeId="1" />
+              <ConnectorPin DataString="AI040.Voltage24V" Description="+24 Volt" TypeId="1" />
+              <ConnectorPin DataString="AI040.Voltage24V" Description="Ground" TypeId="1" />
+              <ConnectorPin DataString="AI040.Voltage24V" Description="Ground" TypeId="1" />
+            </VisualConnector>
+          </VisualConnectors>
+        </VisualModule>
+      </VisualView>
+    </VisualData>
+  </HWDevice>
+  <Class Name="AI040">
+    <Uplink Name="SdiasIn" BusType="SDIAS" PlaceName="Place" />
+	
+	<Downlink Name="ClassState" Port="0" BusType="Hardwarealarme" Desc="Hardwarealarme" />
+    <!-- General -->
+    <Property Name="Required" Channel="Required" Editor="Combo:1=Module is required;0=Module is not required" Desc="0=module is not required 1=module is required (CPU will crash if module is missing)" />
+    <Property Name="Values per Cycle" Channel="ValuesPerCycle" Editor="EditNumber:Unsigned;Dec" Desc="this client set amount of values per cycle as init value! Minimum conversion time of one analog input is 5 microsec. e.g. calculation of max values per cycle:&#xD;&#xA;cycle time 1000microsec and conversion of all 4 inputs activated&#xD;&#xA;cycle time /(AnalogInputs*Conversion time)=ValuesPerCycle   1000microsec /(4*5microsec)=50&#xD;&#xA;0=Max values per channel are calculated automatically" />
+    <IOState Name="Class State" Channel="ClassState" Desc="This server shows the status of the hardware class. If the value is greater than 0, an error has occurred " Type="" />
+    <IOState Name="Device ID" Channel="DeviceID" IsInfo="true" Type="" Desc="This server shows the device ID  of the hardware module" />
+    <IOState Name="FPGA Version" Channel="FPGAVersion" Format="V{5-8}.{1-4}" IsInfo="true" Desc="Shows the actual FPGA version of the module in the format x.y (e.g. 16#10 means v1.0)" />
+    <IOState Name="Hardware Version" Channel="HwVersion" IsInfo="true" Format="V{9-16}.{5-8}{1-4}" Type="" Desc="Shows the hardware version of the module" /> 
+    <IOState Name="Serial Number" Channel="SerialNo" IsInfo="true" Type="" Desc="Shows the Serial Number of the hardware module" />
+    <IOState Name="Retry Counter" Channel="RetryCounter" Desc="Is incremented in case of incorrect data transfer." />
+    <Output Name="LED Control" Channel="LEDControl" Type="Digital" Desc="Sets a LED on hardware, to detect module. (0=LED off; 1=LED on; 2=blinking slowly; 3=blinking fast)" />
+    <IOState Name="Voltage 5V" Channel="Voltage5V" Type="Digital" Desc="Voltage 5V: 0..ok, 1..not ok" />
+    <IOState Name="Voltage 24V" Channel="Voltage24V" Type="Digital" Desc="Voltage 24V: 0..ok, 1..not ok" />
+    <!-- Analog Input 1 -->
+    <IOComment Name="---------------------- Analog Input 1 ----------------------" IsInfo="true" Desc=""/>
+    <Input Name="Analog Input 1" Channel="AI1" IsConfig="true" Desc="Analog Input 1. First value from fifo buffer is displayed according to settings of AIxMaxValue, AIxMinValue and AIxGain. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI1 Channel Active" Channel="AI1Active" Editor="Combo:0=channel is not activated ;1=channel is activated " Desc="0=channel is not activated 1=channel is activated" />
+      <Property Name="AI1 Maximal Value" Channel="AI1MaxValue" Desc="Set Analog Input 1 scale value.&#xD;&#xA;The value must be in the range of -327675000 to +327675000." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI1 Minimal Value" Channel="AI1MinValue" Desc="Set Analog Input 1 scale value.&#xD;&#xA;The value must be in the range of -327675000 to +327675000." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI1 Gain" Channel="AI1Gain" Type="Analog" Desc="Analog Input 1 Gain:&#xD;&#xA;0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" Editor="Combo:0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" />
+      <Property Name="AI1 Current Source" Channel="AI1CurrentSource" Type="Analog" Desc="Analog Input 1 Current Source:&#xD;&#xA;0=0mA; 1=4mA; 2=8mA; 3=12mA" Editor="Combo:0=0mA; 1=4mA; 2=8mA; 3=12mA" />
+    </Input>
+    <IOState Name="AI1 ADC configuration valid" Channel="AI1ConfigValid" Type="Digital" Desc=" 1..configuration of the ADCs is valid&#xD;&#xA;0..configuration of the ADCs is not valid&#xD;&#xA;-1..failed to send configuration to ADCs&#xD;&#xA;" />
+    <IOState Name="AI1 Cable Break" Channel="AI1CableBreak" Type="Digital" EditorColor="0=B(0,255,0); 1=B(255,0,0)" Desc="Cable break detection: 0..ok, 1..cable break" />
+    <IOState Name="AI1 Short Circuit" Channel="AI1ShortCircuit" Type="Digital" Desc="Short circuit detection: 0..ok, 1..short circuit" />
+    <IOState Name="AI1 Gain" Channel="AI1Gain" Type="Analog" Desc="Analog Input 1 Gain:&#xD;&#xA;0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" Editor="Combo:0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" />
+    <IOState Name="AI1 Current Source" Channel="AI1CurrentSource" Type="Analog" Desc="Analog Input 1 Current Source:&#xD;&#xA;0=0mA; 1=4mA; 2=8mA; 3=12mA" Editor="Combo:0=0mA; 1=4mA; 2=8mA; 3=12mA" />
+    <!-- Analog Input 2 -->
+    <IOComment Name="---------------------- Analog Input 2 ----------------------" IsInfo="true" Desc=""/>
+    <Input Name="Analog Input 2" Channel="AI2" IsConfig="true" Desc="Analog Input 2. First value from fifo buffer is displayed according to settings of AIxMaxValue, AIxMinValue and AIxGain. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI2 Channel Active" Channel="AI2Active" Editor="Combo:0=channel is not activated ;1=channel is activated " Desc="0=channel is not activated 1=channel is activated" />
+      <Property Name="AI2 Maximal Value" Channel="AI2MaxValue" Desc="Set Analog Input 2 scale value.&#xD;&#xA;The value must be in the range of -327675000 to +327675000." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI2 Minimal Value" Channel="AI2MinValue" Desc="Set Analog Input 2 scale value.&#xD;&#xA;The value must be in the range of -327675000 to +327675000." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI2 Gain" Channel="AI2Gain" Type="Analog" Desc="Analog Input 2 Gain:&#xD;&#xA;0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" Editor="Combo:0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" />
+      <Property Name="AI2 Current Source" Channel="AI2CurrentSource" Type="Analog" Desc="Analog Input 2 Current Source:&#xD;&#xA;0=0mA; 1=4mA; 2=8mA; 3=12mA" Editor="Combo:0=0mA; 1=4mA; 2=8mA; 3=12mA" />
+    </Input>
+    <IOState Name="AI2 ADC configuration valid" Channel="AI2ConfigValid" Type="Digital" Desc=" 1..configuration of the ADCs is valid&#xD;&#xA;0..configuration of the ADCs is not valid&#xD;&#xA;-1..failed to send configuration to ADCs&#xD;&#xA;" />
+    <IOState Name="AI2 Cable Break" Channel="AI2CableBreak" Type="Digital" Desc="Cable break detection: 0..ok, 1..cable break" />
+    <IOState Name="AI2 Short Circuit" Channel="AI2ShortCircuit" Type="Digital" Desc="Short circuit detection: 0..ok, 1..short circuit" />
+    <IOState Name="AI2 Gain" Channel="AI2Gain" Type="Analog" Desc="Analog Input 2 Gain:&#xD;&#xA;0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" Editor="Combo:0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" />
+    <IOState Name="AI2 Current Source" Channel="AI2CurrentSource" Type="Analog" Desc="Analog Input 2 Current Source:&#xD;&#xA;0=0mA; 1=4mA; 2=8mA; 3=12mA" Editor="Combo:0=0mA; 1=4mA; 2=8mA; 3=12mA" />
+    <!-- Analog Input 3 -->
+    <IOComment Name="---------------------- Analog Input 3 ----------------------" IsInfo="true" Desc=""/>
+    <Input Name="Analog Input 3" Channel="AI3" IsConfig="true" Desc="Analog Input 3. First value from fifo buffer is displayed according to settings of AIxMaxValue, AIxMinValue and AIxGain. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI3 Channel Active" Channel="AI3Active" Editor="Combo:0=channel is not activated ;1=channel is activated " Desc="0=channel is not activated 1=channel is activated" />
+      <Property Name="AI3 Maximal Value" Channel="AI3MaxValue" Desc="Set Analog Input 3 scale value.&#xD;&#xA;The value must be in the range of -327675000 to +327675000." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI3 Minimal Value" Channel="AI3MinValue" Desc="Set Analog Input 3 scale value.&#xD;&#xA;The value must be in the range of -327675000 to +327675000." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI3 Gain" Channel="AI3Gain" Type="Analog" Desc="Analog Input 3 Gain:&#xD;&#xA;0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" Editor="Combo:0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" />
+      <Property Name="AI3 Current Source" Channel="AI3CurrentSource" Type="Analog" Desc="Analog Input 3 Current Source:&#xD;&#xA;0=0mA; 1=4mA; 2=8mA; 3=12mA" Editor="Combo:0=0mA; 1=4mA; 2=8mA; 3=12mA" />
+    </Input>
+    <IOState Name="AI3 ADC configuration valid" Channel="AI3ConfigValid" Type="Digital" Desc=" 1..configuration of the ADCs is valid&#xD;&#xA;0..configuration of the ADCs is not valid&#xD;&#xA;-1..failed to send configuration to ADCs&#xD;&#xA;" />
+    <IOState Name="AI3 Cable Break" Channel="AI3CableBreak" Type="Digital" Desc="Cable break detection: 0..ok, 1..cable break" />
+    <IOState Name="AI3 Short Circuit" Channel="AI3ShortCircuit" Type="Digital" Desc="Short circuit detection: 0..ok, 1..short circuit" />
+    <IOState Name="AI3 Gain" Channel="AI3Gain" Type="Analog" Desc="Analog Input 3 Gain:&#xD;&#xA;0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" Editor="Combo:0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" />
+    <IOState Name="AI3 Current Source" Channel="AI3CurrentSource" Type="Analog" Desc="Analog Input 3 Current Source:&#xD;&#xA;0=0mA; 1=4mA; 2=8mA; 3=12mA" Editor="Combo:0=0mA; 1=4mA; 2=8mA; 3=12mA" />
+    <!-- Analog Input 4 -->
+    <IOComment Name="---------------------- Analog Input 4 ----------------------" IsInfo="true" Desc=""/>
+    <Input Name="Analog Input 4" Channel="AI4" IsConfig="true" Desc="Analog Input 4. First value from fifo buffer is displayed according to settings of AIxMaxValue, AIxMinValue and AIxGain. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI4 Channel Active" Channel="AI4Active" Editor="Combo:0=channel is not activated ;1=channel is activated " Desc="0=channel is not activated 1=channel is activated" />
+      <Property Name="AI4 Maximal Value" Channel="AI4MaxValue" Desc="Set Analog Input 4 scale value.&#xD;&#xA;The value must be in the range of -327675000 to +327675000." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI4 Minimal Value" Channel="AI4MinValue" Desc="Set Analog Input 4 scale value.&#xD;&#xA;The value must be in the range of -327675000 to +327675000." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI4 Gain" Channel="AI4Gain" Type="Analog" Desc="Analog Input 4 Gain:&#xD;&#xA;0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" Editor="Combo:0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" />
+      <Property Name="AI4 Current Source" Channel="AI4CurrentSource" Type="Analog" Desc="Analog Input 4 Current Source:&#xD;&#xA;0=0mA; 1=4mA; 2=8mA; 3=12mA" Editor="Combo:0=0mA; 1=4mA; 2=8mA; 3=12mA" />  
+    </Input>
+    <IOState Name="AI4 ADC configuration valid" Channel="AI4ConfigValid" Type="Digital" Desc=" 1..configuration of the ADCs is valid&#xD;&#xA;0..configuration of the ADCs is not valid&#xD;&#xA;-1..failed to send configuration to ADCs&#xD;&#xA;" />
+    <IOState Name="AI4 Cable Break" Channel="AI4CableBreak" Type="Digital" Desc="Cable break detection: 0..ok, 1..cable break" />
+    <IOState Name="AI4 Short Circuit" Channel="AI4ShortCircuit" Type="Digital" Desc="Short circuit detection: 0..ok, 1..short circuit" />
+    <IOState Name="AI4 Gain" Channel="AI4Gain" Type="Analog" Desc="Analog Input 4 Gain:&#xD;&#xA;0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" Editor="Combo:0=gain of +1; 1=gain of +2; 2=gain of +4; 4=gain of +8; 6=gain of +16; 7=gain of +32" />
+    <IOState Name="AI4 Current Source" Channel="AI4CurrentSource" Type="Analog" Desc="Analog Input 4 Current Source:&#xD;&#xA;0=0mA; 1=4mA; 2=8mA; 3=12mA" Editor="Combo:0=0mA; 1=4mA; 2=8mA; 3=12mA" />  
+    
+    <Script Name="AI040">
+    <Parameter Name="ValuesPerCycle" Type="Client" Channel="ValuesPerCycle" Desc="" />
+    <Parameter Name="AI1Active" Type="Client" Channel="AI1Active" Desc="" />
+    <Parameter Name="AI2Active" Type="Client" Channel="AI2Active" Desc="" />
+    <Parameter Name="AI3Active" Type="Client" Channel="AI3Active" Desc="" />
+    <Parameter Name="AI4Active" Type="Client" Channel="AI4Active" Desc="" />
+<Code>
+def compPost_AI040(element, parameters):
+    
+  if parameters['varanBridge']:
+    parameters['AddToSDiasTime'] = True
+    element['result']['optional'] = {'PDO': {'Wr':[], 'Rd':[], 'WrDyn':[], 'RdDyn':[]}}    
+    SDIASPDORdAdd(0x4,element)  # Default Access
+        
+    NoChannels = 0
+    if operator.gt(element['options']['AI1Active'], 0):
+      NoChannels += 1
+    if operator.gt(element['options']['AI2Active'], 0):
+      NoChannels += 1;
+    if operator.gt(element['options']['AI3Active'], 0):
+      NoChannels += 1;
+    if operator.gt(element['options']['AI4Active'], 0):
+      NoChannels += 1;
+    
+    ValPerCylce = element['options']['ValuesPerCycle']
+    udBusCycleTimeMicroSec = parameters['BusCycleTime'] / 1000
+        
+    # If Channels are active
+    if operator.gt(NoChannels, 0):
+      if ValPerCylce == 0:
+        uiConversionTime = 5
+      else:
+        uiTotalValuesPerCycle = ValPerCylce * NoChannels 
+        if (udBusCycleTimeMicroSec % uiTotalValuesPerCycle ) != 0:
+          if operator.lt(uiTotalValuesPerCycle,(udBusCycleTimeMicroSec*5)):
+            while ((udBusCycleTimeMicroSec % uiTotalValuesPerCycle) != 0):
+              uiTotalValuesPerCycle += 1
+            uiConversionTime = udBusCycleTimeMicroSec / uiTotalValuesPerCycle
+          if ValPerCylce != (uiTotalValuesPerCycle / NoChannels):
+            ValPerCylce = uiTotalValuesPerCycle / NoChannels
+        uiConversionTime = udBusCycleTimeMicroSec/uiTotalValuesPerCycle
+        if operator.lt(uiConversionTime,5):
+          uiConversionTime = 5
+        if operator.gt(uiConversionTime,250):
+          uiConversionTime = 250
+          
+      uiMaxValuesCycle = (udBusCycleTimeMicroSec / (uiConversionTime * NoChannels))
+      
+      if operator.gt(uiMaxValuesCycle,1024):
+        uiMaxValuesCycle = 1024
+      
+      if operator.gt(ValPerCylce,uiMaxValuesCycle):
+        ValPerCylce = uiMaxValuesCycle;    
+      if operator.lt(ValPerCylce,uiMaxValuesCycle):
+        if ValPerCylce != 0:
+          ValPerCylce = uiMaxValuesCycle;    
+      if ValPerCylce == 0:
+        ValPerCylce = uiMaxValuesCycle; 
+
+      usOddValue = 0
+      if (parameters['BusCycleTime'] % NoChannels) != 0:
+        usOddValue = 1
+      
+      for i in range(1,NoChannels+1): 
+        uiNextDOLength = (uiMaxValuesCycle+ usOddValue) * 2
+
+        while uiNextDOLength != 0:
+          if operator.gt(uiNextDOLength,0x80):
+            uiActDoLenght = 0x80
+          else:
+            uiActDoLenght = uiNextDOLength
+            
+          SDIASPDORdAdd(uiActDoLenght,element)
+          uiNextDOLength -= uiActDoLenght
+
+</Code>
+    </Script>
+  </Class>
+</HWClassInfo>

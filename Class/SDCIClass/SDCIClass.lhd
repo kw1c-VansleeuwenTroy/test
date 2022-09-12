@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<HWClassInfo>
+	<HWDevice
+		Revision    = "0.0"
+		ModuleID    = "1"
+		SubModuleID = "0"
+		ModType     = "M_SDCI"
+		Desc        = "SDCI Module">
+		<Types>
+			<Device Name="SDCIClass" ClassName="SDCIClass" DisplayGroup="SDCI">
+			</Device>
+		</Types>
+	</HWDevice>
+	<Class Name="SDCIClass" MultiVaranAllowed="false">
+		<Uplink Name="SdciIn" BusType="SDCI" Channel="SdciIn">
+		</Uplink>
+		<Property
+			Name       = "Required"
+			Channel    = "Required"
+			Editor     = "Combo:1=Module is required;0=Module is not required"
+			Editable   = "true"
+			OnlineEdit = "false"
+			Desc       = "0=module is not required 1=module is required (CPU will crash if module is missing)">
+		</Property>
+		<Property
+			Name       = "Size of PDO read data in bits"
+			Channel    = "ReadPdoSize"
+			Editor     = "Range:0..256"
+			Editable   = "true"
+			OnlineEdit = "false"
+			Desc       = "Size of PDO read data in bits (will be rounded up to the next byte for the data transfer)">
+		</Property>
+		<Property
+			Name       = "Size of PDO write data in bits"
+			Channel    = "WritePdoSize"
+			Editor     = "Range:0..256"
+			Editable   = "true"
+			OnlineEdit = "false"
+			Desc       = "Size of PDO write data in bits (will be rounded up to the next byte for the data transfer)">
+		</Property>
+		<Property
+			Name       = "Port Mode after StartUp"
+			Channel    = "StartUpMode"
+			Editor     = "Combo:0=_Inactive;1=_DigitalInput;2=_DigitalOutput;3=_SDCI"
+			Editable   = "true"
+			OnlineEdit = "false"
+			Desc       = "Choose which mode should be enabled after downloading the parameters to the module">
+		</Property>
+		<Property
+			Name       = "Skip endian swap at PDOs"
+			Channel    = "SkipEndianSwap"
+			Editor     = "Combo:0=SwapPdoData;1=DontSwapPdoData"
+			Editable   = "true"
+			OnlineEdit = "false"
+			Desc       = "If set to 1, the PDO data are not converted when reading/writing them (normally SDCI works with big endian and the CPUs with little)">
+		</Property>
+		<Property
+			Name       = "Skip endian swap at SDOs"
+			Channel    = "SkipEndianSwapAsy"
+			Editor     = "Combo:0=SwapSdoData;1=DontSwapSdoData"
+			Editable   = "true"
+			OnlineEdit = "false"
+			Desc       = "If set to 1, the SDO data are not converted when reading/writing them (normally SDCI works with big endian and the CPUs with little)">
+		</Property>
+		<IOState Name="Class State" Channel="ClassState" Desc="Shows the status of the hardware class">
+		</IOState>
+		<IOState Name="Vendor ID" Channel="VendorID" Desc="This information has been read from the module:&#13;&#10;Unique vendor identification">
+		</IOState>
+		<IOState Name="Device ID" Channel="DeviceID" Desc="This information has been read from the module:&#13;&#10;Unique device identification allocated by a vendor">
+		</IOState>
+		<IOState Name="Minimum Cycle Time in µs" Channel="MinCycleTime" Desc="This information has been read from the module:&#13;&#10;minimum possible cycle time of this module in µs">
+		</IOState>
+		<IOState Name="Actual Mode" Channel="ActualMode" Desc="Shows the currently active mode of the device (is only valid when the ClassState is _ClassOk and the FaultFlags are on _NoFault)">
+		</IOState>
+		<IOState Name="Port State Bits" Channel="PortStateBits" Desc="These bits show the current state of this port">
+		</IOState>
+		<IOState Name="Number Of Available Device Events" Channel="NbrOfEventsAvailable" Desc="Number of device events available&#13;&#10;&#13;&#10;The events can be fetched one by one (beginning with the oldest) via method GetEvent()">
+		</IOState>
+		<IOState Name="Fault Flags" Channel="FaultFlags" Desc="Shows the current fault flags of this port">
+		</IOState>
+		<Input
+			Name    = "Digital input at Pin 2"
+			Type    = "Digital"
+			Channel = "DirectInput"
+			Desc    = "Input (pin 2 of the SDCI port) that does not pass the firmware and is directly fetched from the module&apos;s FPGA">
+		</Input>
+		<Input
+			Name    = "C/Q as digital Input"
+			Type    = "Digital"
+			Channel = "Input"
+			Desc    = "If the port is in _DigitalInput mode this server shows the value of the digital input at the C/Q pin (pin 4) of the SDCI port">
+		</Input>
+		<Output
+			Name    = "C/Q as digital Output"
+			Type    = "Digital"
+			Channel = "Output"
+			Desc    = "If the port is in _DigitalOutput mode this server is used to change the value of the digital output at the C/Q pin (pin 4) of the SDCI port">
+		</Output>
+		<Script Name="SDCIClass">
+			<Parameter Name="ReadPdoSizeValue" Type="Client" Channel="ReadPdoSize">
+			</Parameter>
+			<Parameter Name="WritePdoSizeValue" Type="Client" Channel="WritePdoSize">
+			</Parameter>
+		</Script>
+	</Class>
+</HWClassInfo>

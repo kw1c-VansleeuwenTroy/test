@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<HwVisualConfigManager>
+	<HwVisualConfig Key="__HW_MAIN_PLC__" DeviceType="CP112" Top="20" Left="20"/>
+	<HwVisualConfig Key="AI0431" Top="128.8" Left="20"/>
+	<HwVisualConfig Key="AI0841" Top="128.8" Left="20"/>
+	<HwVisualConfig Key="CP112_IOs1" Top="128.8" Left="20"/>
+	<HwVisualConfig Key="DM1611" Top="128.8" Left="20"/>
+	<HwVisualConfig Key="SCP1111" Top="128.8" Left="20"/>
+	<HwVisualConfig Key="SDM0811" Top="128.8" Left="20"/>
+	<HwVisualConfig Key="VaranManager_11" Top="128.8" Left="20"/>
+</HwVisualConfigManager>
