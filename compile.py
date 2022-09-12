@@ -5,7 +5,6 @@ import sys
 import re
 import os
 import glob
-classes.TheApplication().ExitAppAfterEnd = False
 sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
 
 def GetLastLine(file):
