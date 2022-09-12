@@ -58,8 +58,8 @@ def compile(projectPaths=[""], file=sys.stdout):
 if __name__ == '__main__':
     if os.path.exists('log1.log'):
         os.remove("log1.log")
-        
-    os.rename("log.log","log1.log")
+    if os.path.exists('log.log'):
+        os.rename("log.log","log1.log")
 
     with open('log.log','w+') as out:
         compile(projectPaths, out)
