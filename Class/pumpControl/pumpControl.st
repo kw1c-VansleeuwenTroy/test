@@ -179,7 +179,7 @@ FUNCTION VIRTUAL GLOBAL pumpControl::CyWork
 	VAR_OUTPUT
 		state (EAX) 	: UDINT;
 	END_VAR
-  ActFillLevel := ActFillLevel.Read()
+  ActFillLevel := ActFillLevel.Read();
   pu := ActFillLevel;
   if ActFillLevel >= MaxBorder then
     pump := 1;
@@ -188,7 +188,7 @@ FUNCTION VIRTUAL GLOBAL pumpControl::CyWork
   end_if;
 
   
-  Pump.Write (Pump)
+  Pump.Write (Pump);
 	state := READY;
 
 END_FUNCTION

@@ -21,6 +21,7 @@ processIDRegex = re.compile("P:[0-9]* ")
 taskIDRegex = re.compile("T:[0-9]* ")
 lastLine = GetLastLine(logFile)
 processID = processIDRegex.search(lastLine).group()
+# relative path from script to th project .lcp
 projectPaths = ["Copy Pump.lcp"]
 
 def ShowLogs(file=sys.stdout):
@@ -52,12 +53,15 @@ def compile(projectPaths=[""], file=sys.stdout):
         else:
             ShowLogs(file)
             print("done compiling {}: failed".format(projectName), file=file)
-
-def _main(): 
-    with open('log.log','w+') as out:
-        compile(projectPaths, out)
+    
 
 if __name__ == '__main__':
-    _main()
+    if os.path.exists('log1.log'):
+        os.remove("log1.log")
+        
+    os.rename("log.log","log1.log")
+
+    with open('log.log','w+') as out:
+        compile(projectPaths, out)
 
 
