@@ -6,6 +6,7 @@ import re
 import os
 import glob
 sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
+classes.TheApplication().ExitAppAfterEnd = False
 
 def GetLastLine(file):
     with open(file) as file:
@@ -47,9 +48,14 @@ def compile(projectPaths=[""], file=sys.stdout):
     for projectPath in projectPaths:
         projectName = projectPath.replace('.lcp', '') 
         print("start compiling " + projectName, file=file)
-        if batch.Compile(batch.LoadProject(os.path.join(CWD, projectPath)), False) == True:
+        project = batch.LoadProject(os.path.join(CWD, projectPath))
+        if batch.Compile(project, False) == True:
             ShowLogs(file)
             print("done compiling {}: success".format(projectName), file=file)
+            if batch.Download(project,"TCPIP:127.0.0.1",False) == True:
+                print("download was successful",file=file)
+            else:
+                print("download was not successful", file=file)
         else:
             ShowLogs(file)
             print("done compiling {}: failed".format(projectName), file=file)
@@ -61,6 +67,8 @@ if __name__ == '__main__':
     if os.path.exists('log.log'):
         os.rename("log.log","log1.log")
 
+    if sys.argv[1:]:
+        projectPaths = sys.argv[1:]
     with open('log.log','w+') as out:
         compile(projectPaths, out)
 
