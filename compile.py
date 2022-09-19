@@ -5,8 +5,8 @@ import sys
 import re
 import os
 import glob
+
 sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
-classes.TheApplication().ExitAppAfterEnd = False
 
 def GetLastLine(file):
     with open(file) as file:
@@ -52,14 +52,24 @@ def compile(projectPaths=[""], file=sys.stdout):
         if batch.Compile(project, False) == True:
             ShowLogs(file)
             print("done compiling {}: success".format(projectName), file=file)
-            if batch.Download(project,"TCPIP:127.0.0.1",False) == True:
-                print("download was successful",file=file)
-            else:
-                print("download was not successful", file=file)
+            
         else:
             ShowLogs(file)
             print("done compiling {}: failed".format(projectName), file=file)
-    
+
+def GetProjectFiles(startDir):
+    fileNames = []
+    for _, dirs, _ in os.walk(os.getcwd()):
+        for dir in dirs:
+            if not ".git" in dir:
+                cDir = startDir + '\\' + dir
+                # print(startDir + '\\' + dir)
+                if os.path.isdir(cDir):
+                    fileNames += GetProjectFiles(cDir)
+                for fileName in glob.iglob(cDir + "\*.lcp"):
+                    fileNames += [fileName]
+
+    return fileNames
 
 if __name__ == '__main__':
     if os.path.exists('log1.log'):
@@ -67,9 +77,8 @@ if __name__ == '__main__':
     if os.path.exists('log.log'):
         os.rename("log.log","log1.log")
 
-    if sys.argv[1:]:
-        projectPaths = sys.argv[1:]
     with open('log.log','w+') as out:
-        compile(projectPaths, out)
+        projects = GetProjectFiles(os.getcwd())
+        compile(projects, out)
 
 
