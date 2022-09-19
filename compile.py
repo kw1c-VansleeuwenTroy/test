@@ -1,6 +1,6 @@
 from __future__ import print_function
 from operator import contains
-from sigmatek.lasal import batch, classes
+#from sigmatek.lasal import batch, classes
 import tempfile
 import sys
 import re
@@ -71,7 +71,7 @@ def GetProjectFiles(startDir):
                     fileNames += [fileName]
         for file in files:
             if ".lcp" in file:
-                print(file)
+                fileNames += [file]
 
 
     return fileNames
@@ -85,6 +85,6 @@ if __name__ == '__main__':
     with open('log.log','w+') as out:
         projects = GetProjectFiles(os.getcwd())
         print(projects, file=out)
-        compile(projects, out)
+        #compile(projects, out)
 
 
