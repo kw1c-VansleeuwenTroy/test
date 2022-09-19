@@ -79,6 +79,7 @@ if __name__ == '__main__':
 
     with open('log.log','w+') as out:
         projects = GetProjectFiles(os.getcwd())
+        print(os.getcwd(), file=out)
         compile(projects, out)
 
 
