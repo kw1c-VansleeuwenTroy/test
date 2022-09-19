@@ -1,4 +1,5 @@
 from __future__ import print_function
+from operator import contains
 from sigmatek.lasal import batch, classes
 import tempfile
 import sys
@@ -59,7 +60,7 @@ def compile(projectPaths=[""], file=sys.stdout):
 
 def GetProjectFiles(startDir):
     fileNames = []
-    for _, dirs, _ in os.walk(os.getcwd()):
+    for _, dirs, files in os.walk(startDir):
         for dir in dirs:
             if not ".git" in dir:
                 cDir = startDir + '\\' + dir
@@ -68,6 +69,10 @@ def GetProjectFiles(startDir):
                     fileNames += GetProjectFiles(cDir)
                 for fileName in glob.iglob(cDir + "\*.lcp"):
                     fileNames += [fileName]
+        for file in files:
+            if ".lcp" in file:
+                print(file)
+
 
     return fileNames
 
