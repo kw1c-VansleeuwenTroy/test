@@ -188,7 +188,7 @@ FUNCTION VIRTUAL GLOBAL pumpControl::CyWork
   end_if;
 
   
-  Pump.Write (Pump);
+  Pump.Write (Pump)
 	state := READY;
 
 END_FUNCTION
